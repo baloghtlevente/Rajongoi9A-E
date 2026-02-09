@@ -17,4 +17,4 @@
 
 ## A játékról
 
-> ide
+> A Phasmophobia egy kooperatív horrorjáték, ahol a játékosok paranormális nyomozóként kísértetjárta helyszíneken kutatnak bizonyítékok után. Különféle eszközökkel kell azonosítani, milyen szellem garázdálkodik az adott épületben. A játék lényege a feszültség, az együttműködés és az, hogy életben maradjatok a vadászat közben.
