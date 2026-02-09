@@ -1,0 +1,8 @@
+{
+    "editor.linkedEditing": true,
+    "css.styleSheets": ["**"],
+    "editor.formatOnSave": true,
+    "editor.minimap.enabled": false,
+    "editor.mouseWheelZoom": true,
+    "files.autoSave": "afterDelay",
+}
