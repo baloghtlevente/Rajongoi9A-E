@@ -1,5 +1,16 @@
 {
+    "editor.linkedEditing": true,
+    "css.styleSheets": [
+        "**"
+    ],
+    "editor.formatOnSave": true,
+    "editor.minimap.enabled": false,
+    "editor.mouseWheelZoom": true,
+    "files.autoSave": "afterDelay",
+    "git.autofetch": true,
+    "git.autofetchPeriod": 60,
+    "git.autorefresh": true,
     "git.branchProtection": [
         "main"
-    ]
+    ],
 }
