@@ -2,8 +2,8 @@
 # Phasmophobia Rajongói Oldal
 
 ## Készítők:
-- Balogh-Tatai Levente
-- Kóródi Olivér
+- [Balogh-Tatai Levente](https://github.com/baloghtlevente)
+- [Kóródi Olivér](https://github.com/korodi-oliver)
 
 ## Használt technikák:
 - HTML
