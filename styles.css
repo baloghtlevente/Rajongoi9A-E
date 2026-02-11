@@ -283,6 +283,11 @@ body::before {
     opacity: 0.25;
 }
 
+#badge-logo {
+    width: 100px;
+    height: auto;
+}
+
 @media (max-width: 991px) {
     .navbar-nav .nav-link {
         margin-left: 0;
