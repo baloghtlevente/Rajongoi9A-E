@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scroll Background Demo</title>
+  <style>
+    :root {
+      --bg-a: #ff3b30;
+      --bg-b: #007aff;
+      --bg-c: #ff9500;
+      --bg-d: #34c759;
+      --current-bg: var(--bg-a);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Trebuchet MS", "Avenir Next", sans-serif;
+      background: #111;
+      color: #f2f5fa;
+    }
+
+    .bg-layer {
+      position: fixed;
+      inset: 0;
+      z-index: -2;
+      background-color: var(--current-bg);
+      transition: background-color 500ms linear;
+    }
+
+    .bg-noise {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      opacity: 0.13;
+      background-image:
+        linear-gradient(0deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+      background-size: 3px 3px, 3px 3px;
+      mix-blend-mode: soft-light;
+    }
+
+    .scene-badge {
+      position: fixed;
+      top: 14px;
+      right: 14px;
+      z-index: 4;
+      padding: 0.35rem 0.65rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      background: rgba(9, 12, 19, 0.65);
+      color: #f7faff;
+      font-size: 0.85rem;
+      letter-spacing: 0.04em;
+      backdrop-filter: blur(6px);
+    }
+
+    .intro,
+    .outro {
+      min-height: 70vh;
+      display: grid;
+      place-items: center;
+      padding: 3rem 1.25rem;
+      text-align: center;
+    }
+
+    .intro h1 {
+      margin: 0;
+      font-size: clamp(2rem, 6vw, 4.4rem);
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+
+    .intro p,
+    .outro p {
+      margin: 0.9rem 0 0;
+      max-width: 62ch;
+      line-height: 1.5;
+      color: rgba(245, 249, 255, 0.9);
+    }
+
+    .panel {
+      min-height: 120vh;
+      padding: 0 1rem;
+      display: grid;
+      align-items: center;
+    }
+
+    .panel-card {
+      position: sticky;
+      top: 13vh;
+      width: min(840px, 92vw);
+      margin-inline: auto;
+      padding: clamp(1.2rem, 2.5vw, 2rem);
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      background: rgba(10, 15, 24, 0.5);
+      box-shadow: 0 24px 48px rgba(0, 0, 0, 0.35);
+      backdrop-filter: blur(7px);
+    }
+
+    .panel-index {
+      display: inline-block;
+      padding: 0.15rem 0.5rem;
+      margin-bottom: 0.9rem;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 999px;
+      font-size: 0.85rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #f9fbff;
+    }
+
+    .panel h2 {
+      margin: 0;
+      font-size: clamp(1.45rem, 4vw, 2.8rem);
+      line-height: 1.15;
+    }
+
+    .panel p {
+      margin: 0.9rem 0 0;
+      max-width: 58ch;
+      line-height: 1.55;
+      color: rgba(240, 245, 255, 0.92);
+    }
+
+    .hint {
+      margin-top: 1rem;
+      font-size: 0.92rem;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bg-layer" aria-hidden="true"></div>
+  <div class="bg-noise" aria-hidden="true"></div>
+  <div class="scene-badge" id="sceneBadge">Scene 01</div>
+
+  <header class="intro">
+    <div>
+      <h1>Scroll Scene Demo</h1>
+      <p>
+        This mimics the “fixed content feel + changing background” style.
+        Scroll down and watch the backdrop swap as each section becomes active.
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <section class="panel" data-bg="var(--bg-a)">
+      <article class="panel-card">
+        <span class="panel-index">Scene 01</span>
+        <h2>Sticky Foreground Card</h2>
+        <p>
+          The card is <code>position: sticky</code>, so it remains in place while
+          the section scrolls behind it. This creates that “content stays put” look.
+        </p>
+      </article>
+    </section>
+
+    <section class="panel" data-bg="var(--bg-b)">
+      <article class="panel-card">
+        <span class="panel-index">Scene 02</span>
+        <h2>Background Changes Per Section</h2>
+        <p>
+          An <code>IntersectionObserver</code> watches each section and updates a
+          CSS variable when it enters the viewport.
+        </p>
+      </article>
+    </section>
+
+    <section class="panel" data-bg="var(--bg-c)">
+      <article class="panel-card">
+        <span class="panel-index">Scene 03</span>
+        <h2>Smooth Transition</h2>
+        <p>
+          The fixed background layer uses a CSS transition to fade between gradients.
+          You can swap gradients for images later.
+        </p>
+      </article>
+    </section>
+
+    <section class="panel" data-bg="var(--bg-d)">
+      <article class="panel-card">
+        <span class="panel-index">Scene 04</span>
+        <h2>Production Tip</h2>
+        <p>
+          For real pages, preload your large background images and keep section heights
+          generous so each scene has enough scroll time.
+        </p>
+        <p class="hint">Try replacing gradient values with image URLs for the full cinematic effect.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="outro">
+    <p>
+      End of demo. Duplicate sections and tune the observer threshold to match your preferred pacing.
+    </p>
+  </footer>
+
+  <script>
+    const sections = [...document.querySelectorAll('.panel')];
+    const sceneBadge = document.getElementById('sceneBadge');
+    let activeIndex = -1;
+
+    function pickActiveSection() {
+      const centerY = window.innerHeight * 0.5;
+      let bestIndex = 0;
+      let bestDistance = Number.POSITIVE_INFINITY;
+
+      sections.forEach((section, index) => {
+        const rect = section.getBoundingClientRect();
+        const sectionCenter = rect.top + rect.height / 2;
+        const distance = Math.abs(sectionCenter - centerY);
+
+        if (distance < bestDistance) {
+          bestDistance = distance;
+          bestIndex = index;
+        }
+      });
+
+      if (bestIndex !== activeIndex) {
+        activeIndex = bestIndex;
+        const section = sections[bestIndex];
+        document.documentElement.style.setProperty('--current-bg', section.dataset.bg);
+        sceneBadge.textContent = `Scene 0${bestIndex + 1}`;
+      }
+    }
+
+    window.addEventListener('scroll', pickActiveSection, { passive: true });
+    window.addEventListener('resize', pickActiveSection);
+    pickActiveSection();
+  </script>
+</body>
+
+</html>

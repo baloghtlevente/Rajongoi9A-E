@@ -287,20 +287,139 @@ body::before {
     height: auto;
 }
 
-#about h1 {
+#about h1, #features h1, #awards h1 {
     font-family: "Spectral SC", serif;
     font-style: normal;
     text-decoration: underline;
     text-transform: uppercase;
 }
 
-#about p {
+#awards {
+    color:black;
+}
+
+#about p, #features p, .feature-card p {
     max-width: 600px;
     line-height: 1.8;
     color: var(--muted);
     font-family: "Cinzel", serif;
     font-style: normal;
     font-weight: 100;
+}
+
+#features {
+    background-image: url("/assets/about/red_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top;
+}
+
+.torn-section-red {
+    --tear-size: min(111px, 8.594vw);
+    position: relative;
+    z-index: 4;
+    background-color: #1a1a1a;
+    background-image: url("/assets/about/red_bg.jpg");
+    background-size: auto;
+    background-position: center;
+    background-repeat: repeat;
+
+    /* Keep layout height while letting torn edges overlap neighbors */
+    margin-top: calc(var(--tear-size) * -1);
+    margin-bottom: calc(var(--tear-size) * -1);
+    padding-top: calc(3rem + var(--tear-size)) !important;
+    padding-bottom: calc(3rem + var(--tear-size)) !important;
+
+    -webkit-mask-image:
+        url("/assets/dividerMasks/top-diagonal-up-large.svg"),
+        url("/assets/dividerMasks/bottom-diagonal-up-large.svg"),
+        linear-gradient(
+            #0000,
+            #0000 calc(var(--tear-size) - 2px),
+            #000 calc(var(--tear-size) - 3px),
+            #000 calc((100% - var(--tear-size)) + 3px),
+            #0000 calc((100% - var(--tear-size)) + 3px),
+            #0000 100%
+        );
+    mask-image:
+        url("/assets/dividerMasks/top-diagonal-up-large.svg"),
+        url("/assets/dividerMasks/bottom-diagonal-up-large.svg"),
+        linear-gradient(
+            #0000,
+            #0000 calc(var(--tear-size) - 2px),
+            #000 calc(var(--tear-size) - 3px),
+            #000 calc((100% - var(--tear-size)) + 3px),
+            #0000 calc((100% - var(--tear-size)) + 3px),
+            #0000 100%
+        );
+    -webkit-mask-size: 100% var(--tear-size), 100% var(--tear-size), 100% 100%;
+    mask-size: 100% var(--tear-size), 100% var(--tear-size), 100% 100%;
+    -webkit-mask-position: top center, bottom center, center;
+    mask-position: top center, bottom center, center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+
+.torn-section-paper {
+    --tear-size: min(111px, 8.594vw);
+    position: relative;
+    z-index: 0;
+    background-color: #1a1a1a;
+    background-image: url("/assets/about/paper_bg.png");
+    background-size: auto;
+    background-position: center;
+    background-repeat: repeat;
+
+    /* Keep layout height while letting torn edges overlap neighbors */
+    margin-top: calc(var(--tear-size) * -1);
+    margin-bottom: calc(var(--tear-size) * -1);
+    padding-top: calc(3rem + var(--tear-size)) !important;
+    padding-bottom: calc(3rem + var(--tear-size)) !important;
+
+    /* -webkit-mask-image:
+        url("/assets/dividerMasks/top-diagonal-up-large.svg"),
+        url("/assets/dividerMasks/bottom-diagonal-up-large.svg"),
+        linear-gradient(
+            #0000,
+            #0000 calc(var(--tear-size) - 2px),
+            #000 calc(var(--tear-size) - 3px),
+            #000 calc((100% - var(--tear-size)) + 3px),
+            #0000 calc((100% - var(--tear-size)) + 3px),
+            #0000 100%
+        );
+    mask-image:
+        url("/assets/dividerMasks/top-diagonal-up-large.svg"),
+        url("/assets/dividerMasks/bottom-diagonal-up-large.svg"),
+        linear-gradient(
+            #0000,
+            #0000 calc(var(--tear-size) - 2px),
+            #000 calc(var(--tear-size) - 3px),
+            #000 calc((100% - var(--tear-size)) + 3px),
+            #0000 calc((100% - var(--tear-size)) + 3px),
+            #0000 100%
+        );
+    -webkit-mask-size: 100% var(--tear-size), 100% var(--tear-size), 100% 100%;
+    mask-size: 100% var(--tear-size), 100% var(--tear-size), 100% 100%;
+    -webkit-mask-position: top center, bottom center, center;
+    mask-position: top center, bottom center, center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat; */
+}
+
+@supports not ((mask-image: linear-gradient(#000, #000)) or (-webkit-mask-image: linear-gradient(#000, #000))) {
+    .torn-section {
+        margin-top: 0;
+        margin-bottom: 0;
+        clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 88%);
+    }
+}
+
+.feature-card h4 {
+    font-family: "Spectral SC", serif;
+    font-style: normal;
+    font-variant: small-caps;
+    margin-bottom: 12px;
 }
 
 @media (max-width: 991px) {
