@@ -45,7 +45,7 @@ body::before {
     align-items: center;
     gap: 12px;
     color: var(--ink);
-    font-family: 'Joti', serif;
+    font-family: 'Joti One', serif;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     font-size: 14px;
@@ -200,7 +200,7 @@ body::before {
     aspect-ratio: 4 / 5;
     border-radius: 36px;
     /* background: linear-gradient(155deg, #1b232a, #12171c 50%, #2a0b0b 100%); */
-    background-image: url("/assets/maps/pointhope_notxt.png");
+    background-image: url("assets/maps/pointhope_notxt.png");
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -308,7 +308,7 @@ body::before {
 }
 
 #features {
-    background-image: url("/assets/about/red_bg.jpg");
+    background-image: url("assets/about/red_bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -320,7 +320,7 @@ body::before {
     position: relative;
     z-index: 4;
     background-color: #1a1a1a;
-    background-image: url("/assets/about/red_bg.jpg");
+    background-image: url("assets/about/red_bg.jpg");
     background-size: auto;
     background-position: center;
     background-repeat: repeat;
@@ -332,8 +332,8 @@ body::before {
     padding-bottom: calc(3rem + var(--tear-size)) !important;
 
     -webkit-mask-image:
-        url("/assets/dividerMasks/top-diagonal-up-large.svg"),
-        url("/assets/dividerMasks/bottom-diagonal-up-large.svg"),
+        url("assets/dividerMasks/top-diagonal-up-large.svg"),
+        url("assets/dividerMasks/bottom-diagonal-up-large.svg"),
         linear-gradient(
             #0000,
             #0000 calc(var(--tear-size) - 2px),
@@ -343,8 +343,8 @@ body::before {
             #0000 100%
         );
     mask-image:
-        url("/assets/dividerMasks/top-diagonal-up-large.svg"),
-        url("/assets/dividerMasks/bottom-diagonal-up-large.svg"),
+        url("assets/dividerMasks/top-diagonal-up-large.svg"),
+        url("assets/dividerMasks/bottom-diagonal-up-large.svg"),
         linear-gradient(
             #0000,
             #0000 calc(var(--tear-size) - 2px),
@@ -366,7 +366,7 @@ body::before {
     position: relative;
     z-index: 0;
     background-color: #1a1a1a;
-    background-image: url("/assets/about/paper_bg.png");
+    background-image: url("assets/about/paper_bg.png");
     background-size: auto;
     background-position: center;
     background-repeat: repeat;
@@ -378,8 +378,8 @@ body::before {
     padding-bottom: calc(3rem + var(--tear-size)) !important;
 
     /* -webkit-mask-image:
-        url("/assets/dividerMasks/top-diagonal-up-large.svg"),
-        url("/assets/dividerMasks/bottom-diagonal-up-large.svg"),
+        url("assets/dividerMasks/top-diagonal-up-large.svg"),
+        url("assets/dividerMasks/bottom-diagonal-up-large.svg"),
         linear-gradient(
             #0000,
             #0000 calc(var(--tear-size) - 2px),
@@ -389,8 +389,8 @@ body::before {
             #0000 100%
         );
     mask-image:
-        url("/assets/dividerMasks/top-diagonal-up-large.svg"),
-        url("/assets/dividerMasks/bottom-diagonal-up-large.svg"),
+        url("assets/dividerMasks/top-diagonal-up-large.svg"),
+        url("assets/dividerMasks/bottom-diagonal-up-large.svg"),
         linear-gradient(
             #0000,
             #0000 calc(var(--tear-size) - 2px),
@@ -407,8 +407,17 @@ body::before {
     mask-repeat: no-repeat; */
 }
 
+
 @supports not ((mask-image: linear-gradient(#000, #000)) or (-webkit-mask-image: linear-gradient(#000, #000))) {
-    .torn-section {
+    .torn-section-red {
+        margin-top: 0;
+        margin-bottom: 0;
+        clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 88%);
+    }
+}
+
+@supports not ((mask-image: linear-gradient(#000, #000)) or (-webkit-mask-image: linear-gradient(#000, #000))) {
+    .torn-section-paper {
         margin-top: 0;
         margin-bottom: 0;
         clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 88%);
