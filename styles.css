@@ -298,6 +298,9 @@ body::before {
     max-width: 600px;
     line-height: 1.8;
     color: var(--muted);
+    font-family: "Cinzel", serif;
+    font-style: normal;
+    font-weight: 100;
 }
 
 @media (max-width: 991px) {
