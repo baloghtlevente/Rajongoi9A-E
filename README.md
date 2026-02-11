@@ -1,4 +1,4 @@
-![Phasmophobia Logó](assets/logos/Phasmophobia_logo.png)
+![Phasmophobia Logó](assets/logos/logo_lg_nobg.png.png)
 # Phasmophobia Rajongói Oldal
 
 ## Készítők:
