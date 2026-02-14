@@ -320,6 +320,11 @@ body::before {
     background-image: url("https://kineticgames.co.uk/payload-api/media/file/background_texture3.png");
 }
 
+.icon {
+    width: 25px;
+    /* height: 4px; */
+}
+
 .torn-section-red {
     --tear-size: min(111px, 8.594vw);
     position: relative;
