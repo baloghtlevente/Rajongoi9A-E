@@ -287,7 +287,7 @@ body::before {
     height: auto;
 }
 
-#about h1, #features h1, #awards h1 {
+#about h1, #features h1, #awards h1, #footer h1 {
     font-family: "Spectral SC", serif;
     font-style: normal;
     text-decoration: underline;
@@ -298,7 +298,7 @@ body::before {
     color:black;
 }
 
-#about p, #features p, .feature-card p {
+#about p, #features p, .feature-card p, #footer p {
     max-width: 600px;
     line-height: 1.8;
     color: var(--muted);
@@ -313,6 +313,11 @@ body::before {
     background-size: cover;
     background-attachment: fixed;
     background-position: center top;
+}
+
+#footer {
+    background-color: rgb(25, 25, 25);
+    background-image: url("https://kineticgames.co.uk/payload-api/media/file/background_texture3.png");
 }
 
 .torn-section-red {
@@ -377,7 +382,7 @@ body::before {
     padding-top: calc(3rem + var(--tear-size)) !important;
     padding-bottom: calc(3rem + var(--tear-size)) !important;
 
-    /* -webkit-mask-image:
+    -webkit-mask-image:
         url("assets/dividerMasks/top-diagonal-up-large.svg"),
         url("assets/dividerMasks/bottom-diagonal-up-large.svg"),
         linear-gradient(
@@ -404,7 +409,7 @@ body::before {
     -webkit-mask-position: top center, bottom center, center;
     mask-position: top center, bottom center, center;
     -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat; */
+    mask-repeat: no-repeat;
 }
 
 
