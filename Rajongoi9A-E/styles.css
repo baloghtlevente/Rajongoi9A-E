@@ -339,8 +339,8 @@ body::before {
 }
 
 .ghost-card {
-    background-image: url("szellem_hatter.png");
+    background-image: url("assets/ghosts/szellem_\ hatter.png");
     background-size: cover;
     background-position: center;
-    color: black;
+    color: white;
 }
