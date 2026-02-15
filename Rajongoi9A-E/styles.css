@@ -337,3 +337,10 @@ body::before {
         0 0 40px #ff0000,
         0 0 80px #8b0000;
 }
+
+.ghost-card {
+    background-image: url("szellem_hatter.png");
+    background-size: cover;
+    background-position: center;
+    color: black;
+}
