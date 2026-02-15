@@ -329,3 +329,11 @@ body::before {
         align-items: flex-start;
     }
 }
+.main-title {
+    color: white;
+    text-shadow:
+        0 0 10px #ff0000,
+        0 0 20px #ff0000,
+        0 0 40px #ff0000,
+        0 0 80px #8b0000;
+}
