@@ -287,7 +287,10 @@ body::before {
     height: auto;
 }
 
-#about h1, #features h1, #awards h1, #footer h1 {
+#about h1,
+#features h1,
+#awards h1,
+#footer h1 {
     font-family: "Spectral SC", serif;
     font-style: normal;
     text-decoration: underline;
@@ -295,10 +298,13 @@ body::before {
 }
 
 #awards {
-    color:black;
+    color: black;
 }
 
-#about p, #features p, .feature-card p, #footer p {
+#about p,
+#features p,
+.feature-card p,
+#footer p {
     max-width: 600px;
     line-height: 1.8;
     color: var(--muted);
@@ -344,25 +350,21 @@ body::before {
     -webkit-mask-image:
         url("assets/dividerMasks/top-diagonal-up-large.svg"),
         url("assets/dividerMasks/bottom-diagonal-up-large.svg"),
-        linear-gradient(
-            #0000,
+        linear-gradient(#0000,
             #0000 calc(var(--tear-size) - 2px),
             #000 calc(var(--tear-size) - 3px),
             #000 calc((100% - var(--tear-size)) + 3px),
             #0000 calc((100% - var(--tear-size)) + 3px),
-            #0000 100%
-        );
+            #0000 100%);
     mask-image:
         url("assets/dividerMasks/top-diagonal-up-large.svg"),
         url("assets/dividerMasks/bottom-diagonal-up-large.svg"),
-        linear-gradient(
-            #0000,
+        linear-gradient(#0000,
             #0000 calc(var(--tear-size) - 2px),
             #000 calc(var(--tear-size) - 3px),
             #000 calc((100% - var(--tear-size)) + 3px),
             #0000 calc((100% - var(--tear-size)) + 3px),
-            #0000 100%
-        );
+            #0000 100%);
     -webkit-mask-size: 100% var(--tear-size), 100% var(--tear-size), 100% 100%;
     mask-size: 100% var(--tear-size), 100% var(--tear-size), 100% 100%;
     -webkit-mask-position: top center, bottom center, center;
@@ -390,25 +392,21 @@ body::before {
     -webkit-mask-image:
         url("assets/dividerMasks/top-diagonal-up-large.svg"),
         url("assets/dividerMasks/bottom-diagonal-up-large.svg"),
-        linear-gradient(
-            #0000,
+        linear-gradient(#0000,
             #0000 calc(var(--tear-size) - 2px),
             #000 calc(var(--tear-size) - 3px),
             #000 calc((100% - var(--tear-size)) + 3px),
             #0000 calc((100% - var(--tear-size)) + 3px),
-            #0000 100%
-        );
+            #0000 100%);
     mask-image:
         url("assets/dividerMasks/top-diagonal-up-large.svg"),
         url("assets/dividerMasks/bottom-diagonal-up-large.svg"),
-        linear-gradient(
-            #0000,
+        linear-gradient(#0000,
             #0000 calc(var(--tear-size) - 2px),
             #000 calc(var(--tear-size) - 3px),
             #000 calc((100% - var(--tear-size)) + 3px),
             #0000 calc((100% - var(--tear-size)) + 3px),
-            #0000 100%
-        );
+            #0000 100%);
     -webkit-mask-size: 100% var(--tear-size), 100% var(--tear-size), 100% 100%;
     mask-size: 100% var(--tear-size), 100% var(--tear-size), 100% 100%;
     -webkit-mask-position: top center, bottom center, center;
@@ -470,6 +468,7 @@ body::before {
         align-items: flex-start;
     }
 }
+
 .main-title {
     color: white;
     text-shadow:
@@ -477,6 +476,8 @@ body::before {
         0 0 20px #ff0000,
         0 0 40px #ff0000,
         0 0 80px #8b0000;
+    font-family: "Spectral SC", serif;
+    text-decoration: underline;
 }
 
 .ghost-card {
