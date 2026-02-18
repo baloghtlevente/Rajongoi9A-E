@@ -43,26 +43,16 @@
                 <div class="card tool-card w-100">
                     <div class="card-header tool-card-header">Zseblámpa</div>
                     <div class="card-body tool-card-body">
-                        <ul class="nav nav-tabs tool-tabs" id="toolLevelTabs" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="level1-tab" data-bs-toggle="tab"
-                                    data-bs-target="#level1-pane" type="button" role="tab" aria-controls="level1-pane"
-                                    aria-selected="true">I. szint</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="level2-tab" data-bs-toggle="tab"
-                                    data-bs-target="#level2-pane" type="button" role="tab" aria-controls="level2-pane"
-                                    aria-selected="false">II. szint</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="level3-tab" data-bs-toggle="tab"
-                                    data-bs-target="#level3-pane" type="button" role="tab" aria-controls="level3-pane"
-                                    aria-selected="false">III. szint</button>
-                            </li>
-                        </ul>
-                        <div class="tab-content pt-3" id="toolLevelTabsContent">
-                            <div class="tab-pane fade show active" id="level1-pane" role="tabpanel"
-                                aria-labelledby="level1-tab" tabindex="0">
+                        <div class="tool-tabs" role="tablist" aria-label="Szint valaszto">
+                            <button class="tool-tab-btn is-active" type="button" data-tool-tab="1"
+                                aria-selected="true">I. szint</button>
+                            <button class="tool-tab-btn" type="button" data-tool-tab="2" aria-selected="false">II.
+                                szint</button>
+                            <button class="tool-tab-btn" type="button" data-tool-tab="3" aria-selected="false">III.
+                                szint</button>
+                        </div>
+                        <div class="tool-tab-content pt-3">
+                            <div class="tool-pane is-active" data-tool-pane="1">
                                 <div>
                                     <img src="/assets/tools/flashlight1.png" alt="I. Szintű zseblámpa"
                                         class="w-100 tool-image">
@@ -70,8 +60,7 @@
                                         meglepő, hogy még mindig működik.</p>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="level2-pane" role="tabpanel" aria-labelledby="level2-tab"
-                                tabindex="0">
+                            <div class="tool-pane" data-tool-pane="2">
                                 <div>
                                     <img src="/assets/tools/flashlight2.png" alt="II. Szintű zseblámpa"
                                         class="w-100 tool-image">
@@ -79,13 +68,12 @@
                                         rendelkezik a taktikusabb fogás érdekében.</p>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="level3-pane" role="tabpanel" aria-labelledby="level3-tab"
-                                tabindex="0">
+                            <div class="tool-pane" data-tool-pane="3">
                                 <div>
                                     <img src="/assets/tools/flashlight3.png" alt="III. Szintű zseblámpa"
                                         class="w-100 tool-image">
                                     <p class="text-center fst-italic tool-desc">Egy sokkal nagyobb zseblámpa, még
-                                        fogantyúja is van!.</p>
+                                        fogantyúja is van!</p>
                                 </div>
                             </div>
                         </div>
@@ -108,11 +96,156 @@
                     </div>
                 </div>
             </div>
+            <div class="col-xl-4 col-lg-5 col-md-8 d-flex">
+                <div class="card tool-card w-100">
+                    <div class="card-header tool-card-header">Hőmérő</div>
+                    <div class="card-body tool-card-body">
+                        <div class="tool-tabs" role="tablist" aria-label="Szint valaszto">
+                            <button class="tool-tab-btn is-active" type="button" data-tool-tab="1"
+                                aria-selected="true">I. szint</button>
+                            <button class="tool-tab-btn" type="button" data-tool-tab="2" aria-selected="false">II.
+                                szint</button>
+                            <button class="tool-tab-btn" type="button" data-tool-tab="3" aria-selected="false">III.
+                                szint</button>
+                        </div>
+                        <div class="tool-tab-content pt-3">
+                            <div class="tool-pane is-active" data-tool-pane="1">
+                                <div>
+                                    <img src="/assets/tools/thermo1.png" alt="I. Szintű hőmérő"
+                                        class="w-100 tool-image">
+                                    <p class="text-center fst-italic tool-desc">Egy vintage falra szerelhető hőmérő,
+                                        amelyet általában egész évben a szobahőmérséklet mérésére használnak a falra
+                                        akasztva. Kézben hordozva is tökéletesen működik!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tool-pane" data-tool-pane="2">
+                                <div>
+                                    <img src="/assets/tools/thermo2.png" alt="II. Szintű hőmérő"
+                                        class="w-100 tool-image">
+                                    <p class="text-center fst-italic tool-desc">Általában egészségügyi szakemberek
+                                        használják gyors hőmérsékletmérésre; ez az infravörös hőmérő is ideális, ha
+                                        gyorsan kell értéket leolvasni. Úgy tűnik azonban, hogy kicsit pontatlanul mér —
+                                        lehet, hogy már öreg.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tool-pane" data-tool-pane="3">
+                                <div>
+                                    <img src="/assets/tools/thermo3.png" alt="III. Szintű hőmérő"
+                                        class="w-100 tool-image">
+                                    <p class="text-center fst-italic tool-desc">Modernebb, okosabb és pontosabb.
+                                        Egyszerűen verhetetlen.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="tool-divider">
+                        <table class="me-auto ms-auto tool-meta">
+                            <tr>
+                                <td class="fw-bold">Ár:</td>
+                                <td class="float-end">$30</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">Maximum Játékonként:</td>
+                                <td class="float-end">2</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">Kezdő tárgy:</td>
+                                <td class="float-end">Igen</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-5 col-md-8 d-flex">
+                <div class="card tool-card w-100">
+                    <div class="card-header tool-card-header">Spirit Box</div>
+                    <div class="card-body tool-card-body">
+                        <div class="tool-tabs" role="tablist" aria-label="Szint valaszto">
+                            <button class="tool-tab-btn is-active" type="button" data-tool-tab="1"
+                                aria-selected="true">I. szint</button>
+                            <button class="tool-tab-btn" type="button" data-tool-tab="2" aria-selected="false">II.
+                                szint</button>
+                            <button class="tool-tab-btn" type="button" data-tool-tab="3" aria-selected="false">III.
+                                szint</button>
+                        </div>
+                        <div class="tool-tab-content pt-3">
+                            <div class="tool-pane is-active" data-tool-pane="1">
+                                <div>
+                                    <img src="/assets/tools/spirit1.png" alt="I. Szintű zseblámpa"
+                                        class="w-100 tool-image">
+                                    <p class="text-center fst-italic tool-desc">Egy régi FM/AM rádió. Kicsi és kompakt,
+                                        de a hangszóró minősége nem a legjobb.</p>
+                                </div>
+                            </div>
+                            <div class="tool-pane" data-tool-pane="2">
+                                <div>
+                                    <img src="/assets/tools/spirit2.png" alt="II. Szintű zseblámpa"
+                                        class="w-100 tool-image">
+                                    <p class="text-center fst-italic tool-desc">A P-SB7T Spirit Box kizárólag az
+                                        ismeretlennel való kommunikációra készült. A háttérvilágításos kijelző segíti a
+                                        nyomozást sötétben.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tool-pane" data-tool-pane="3">
+                                <div>
+                                    <img src="/assets/tools/spirit3.png" alt="III. Szintű zseblámpa"
+                                        class="w-100 tool-image">
+                                    <p class="text-center fst-italic tool-desc">Az SB11-Z egy jóval nagyobb Spirit Box,
+                                        amely egyszerre két frekvenciasávot is képes pásztázni.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="tool-divider">
+                        <table class="me-auto ms-auto tool-meta">
+                            <tr>
+                                <td class="fw-bold">Ár:</td>
+                                <td class="float-end">$50</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">Maximum Játékonként:</td>
+                                <td class="float-end">2</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">Kezdő tárgy:</td>
+                                <td class="float-end">Igen</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="ambient ambient-left"></div>
     <div class="ambient ambient-right"></div>
+    <script>
+        document.querySelectorAll('.tool-card').forEach((card) => {
+            const tabs = card.querySelectorAll('[data-tool-tab]');
+            const panes = card.querySelectorAll('[data-tool-pane]');
+
+            tabs.forEach((tab) => {
+                tab.addEventListener('click', () => {
+                    const level = tab.dataset.toolTab;
+
+                    tabs.forEach((btn) => {
+                        const active = btn === tab;
+                        btn.classList.toggle('is-active', active);
+                        btn.setAttribute('aria-selected', active ? 'true' : 'false');
+                    });
+
+                    panes.forEach((pane) => {
+                        pane.classList.toggle('is-active', pane.dataset.toolPane === level);
+                    });
+                });
+            });
+        });
+    </script>
     <script src="assets/bootstrap-5/js/bootstrap.bundle.min.js"></script>
 </body>
 

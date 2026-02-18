@@ -626,3 +626,48 @@ body::before {
 .tool-meta td {
     padding: 0.2rem 0;
 }
+
+.tool-tab-btn {
+    color: #aab4b9;
+    border: 1px solid transparent;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+    padding: 0.4rem 0.75rem;
+    font-size: 0.86rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: transparent;
+}
+
+.tool-tab-btn:hover {
+    color: #edf2f5;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.tool-tab-btn.is-active {
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.22);
+    background: linear-gradient(135deg, rgba(185, 28, 28, 0.88), rgba(127, 29, 29, 0.78));
+}
+
+.tool-pane {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(6px);
+    transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s ease;
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.tool-pane.is-active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    position: relative;
+    pointer-events: auto;
+}
+
+.tool-tab-content {
+    position: relative;
+}
