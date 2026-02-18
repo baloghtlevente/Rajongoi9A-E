@@ -242,6 +242,14 @@ body::before {
     left: 12px;
 }
 
+.dot-grid--blue {
+    top: 12%;
+    right: 12px;
+    background-image: radial-gradient(circle, rgba(31, 41, 173, 0.7) 32%, transparent 34%);
+    width: 70px;
+    height: 120px;
+}
+
 .dot-grid--right {
     top: 12%;
     right: 12px;
@@ -290,7 +298,8 @@ body::before {
 #about h1,
 #features h1,
 #awards h1,
-#footer h1 {
+#footer h1,
+.main-title {
     font-family: "Spectral SC", serif;
     font-style: normal;
     text-decoration: underline;
@@ -469,7 +478,7 @@ body::before {
     }
 }
 
-.main-title {
+.ghost-title {
     color: white;
     text-shadow:
         0 0 10px #ff0000,
@@ -477,12 +486,37 @@ body::before {
         0 0 40px #ff0000,
         0 0 80px #8b0000;
     font-family: "Spectral SC", serif;
-    text-decoration: underline;
 }
 
 .ghost-card {
-    background-image: url("assets/ghosts/szellem_\ hatter.png");
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    background:
+        radial-gradient(140% 120% at 10% 0%, rgba(185, 28, 28, 0.26) 0%, rgba(185, 28, 28, 0.04) 45%, transparent 70%),
+        radial-gradient(120% 140% at 100% 100%, rgba(24, 108, 129, 0.26) 0%, rgba(24, 108, 129, 0.05) 45%, transparent 72%),
+        repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.02) 0 2px, transparent 2px 7px),
+        linear-gradient(160deg, #12181d 0%, #0d1115 55%, #161015 100%);
     background-size: cover;
     background-position: center;
     color: white;
+    box-shadow:
+        0 12px 26px rgba(0, 0, 0, 0.38),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    
+}
+
+.ghost-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(223, 107, 107, 0.5);
+    box-shadow:
+        0 18px 38px rgba(0, 0, 0, 0.45),
+        0 0 26px rgba(185, 28, 28, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.16);
+}
+
+#ghost-desc {
+    font-family: "Cinzel", serif;
 }
