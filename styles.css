@@ -538,3 +538,91 @@ body::before {
     background: linear-gradient(135deg, rgba(185, 28, 28, 0.95), rgba(127, 29, 29, 0.95)) !important;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.25);
 }
+
+.tool-card {
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 16px;
+    overflow: hidden;
+    background:
+        radial-gradient(130% 100% at 0% 0%, rgba(185, 28, 28, 0.24) 0%, rgba(185, 28, 28, 0.03) 42%, transparent 68%),
+        radial-gradient(115% 130% at 100% 100%, rgba(19, 73, 90, 0.28) 0%, rgba(19, 73, 90, 0.04) 48%, transparent 72%),
+        linear-gradient(155deg, #11171d 0%, #0d1116 56%, #171016 100%);
+    color: #eef3f6;
+    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.tool-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(223, 107, 107, 0.45);
+    box-shadow: 0 24px 50px rgba(0, 0, 0, 0.45), 0 0 30px rgba(185, 28, 28, 0.17);
+}
+
+.tool-card-header {
+    font-family: "Spectral SC", serif;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    font-size: 1.05rem;
+    color: #f8fafc;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    background: linear-gradient(135deg, rgba(185, 28, 28, 0.75), rgba(127, 29, 29, 0.62));
+}
+
+.tool-card-body {
+    background: transparent;
+}
+
+.tool-tabs {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    gap: 0.35rem;
+}
+
+.tool-tabs .nav-link {
+    color: #aab4b9;
+    border: 1px solid transparent;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+    padding: 0.4rem 0.75rem;
+    font-size: 0.86rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.tool-tabs .nav-link:hover {
+    color: #edf2f5;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.tool-tabs .nav-link.active {
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.22);
+    background: linear-gradient(135deg, rgba(185, 28, 28, 0.88), rgba(127, 29, 29, 0.78));
+}
+
+.tool-image {
+    max-width: 210px;
+    margin: 0 auto;
+    display: block;
+    filter: drop-shadow(0 14px 22px rgba(0, 0, 0, 0.45));
+}
+
+.tool-desc {
+    color: #b7c1c7;
+    margin-top: 0.75rem;
+    font-size: 0.92rem;
+}
+
+.tool-divider {
+    border-color: rgba(255, 255, 255, 0.14);
+    opacity: 1;
+}
+
+.tool-meta {
+    color: #dbe4e9;
+    width: 100%;
+    max-width: 280px;
+}
+
+.tool-meta td {
+    padding: 0.2rem 0;
+}
