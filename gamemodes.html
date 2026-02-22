@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/bootstrap-5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
     <title>Játékmódok</title>
+    <link rel="stylesheet" href="assets/bootstrap-5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -22,7 +22,7 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link" href="index.html">Főoldal</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">Játékról</a></li>
                     <li class="nav-item"><a class="nav-link" href="ghosts.html">Szellemek</a></li>
@@ -60,80 +60,90 @@
                     </ul>
                 </div>
             </div>
+        </section>
 
-            <div class="col-md-6 col-lg-4">
-                <div class="card mode-card p-4">
-                    <span class="badge bg-warning text-dark mb-3 difficulty-badge">Haladó</span>
-                    <h3 class="h4 text-ghost">Intermediate</h3>
-                    <p>Már tudod, mit csinálsz, de a szellem is aktívabb. A biztonságérzeted kezd elpárologni.</p>
-                    <ul class="small text-secondary">
-                        <li>2 perc felkészülési idő</li>
-                        <li>Gyorsabb elmeállapot (Sanity) csökkenés</li>
-                        <li>A szellem gyakrabban interaktál</li>
-                    </ul>
+        <section class="container pb-5">
+            <div class="row g-4">
+                <div class="col-md-6 col-xl-4">
+                    <article class="gamemode-card mode-amateur h-100">
+                        <span class="mode-tag">Amatőr</span>
+                        <h3>Amateur</h3>
+                        <p>A kezdő szellemvadászok számára. Biztonságosabb környezet tanuláshoz.</p>
+                        <ul>
+                            <li>5 perc felkészülési idő</li>
+                            <li>Hosszabb setup fázis</li>
+                            <li>Több visszakapott pénz halál esetén</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-xl-4">
+                    <article class="gamemode-card mode-intermediate h-100">
+                        <span class="mode-tag">Haladó</span>
+                        <h3>Intermediate</h3>
+                        <p>Aktívabb szellem és gyorsabb tempó, kisebb hibahatárral.</p>
+                        <ul>
+                            <li>2 perc felkészülési idő</li>
+                            <li>Gyorsabb sanity csökkenés</li>
+                            <li>Gyakoribb paranormális interakciók</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-xl-4">
+                    <article class="gamemode-card mode-professional h-100">
+                        <span class="mode-tag">Profi</span>
+                        <h3>Professional</h3>
+                        <p>Nincs segítség és nincs türelmi idő, csak pontos csapatjáték.</p>
+                        <ul>
+                            <li>0 perc felkészülési idő</li>
+                            <li>A szellem bármikor vadászhat</li>
+                            <li>Gyors sanity-vesztés</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-xl-4">
+                    <article class="gamemode-card mode-nightmare h-100">
+                        <span class="mode-tag">Rémálom</span>
+                        <h3>Nightmare</h3>
+                        <p>Kevesebb információ, brutálisabb döntéskényszer és több bizonytalanság.</p>
+                        <ul>
+                            <li>Csak 2 bizonyíték érhető el</li>
+                            <li>Hunt láncolódhat gyilkosság után</li>
+                            <li>Több megtévesztő jel</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-xl-4">
+                    <article class="gamemode-card mode-insanity h-100">
+                        <span class="mode-tag">Őrület</span>
+                        <h3>Insanity</h3>
+                        <p>Szinte semmi kapaszkodó, csak rutin, reflex és logika.</p>
+                        <ul>
+                            <li>Csak 1 bizonyíték érhető el</li>
+                            <li>Nincs setup idő</li>
+                            <li>Nagyon magas jutalomszorzó</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-xl-4">
+                    <article class="gamemode-card mode-custom h-100">
+                        <span class="mode-tag">Egyedi</span>
+                        <h3>Custom</h3>
+                        <p>Teljes kontroll a szabályok felett, gyakorláshoz és extrém kihíváshoz.</p>
+                        <ul>
+                            <li>Saját szorzók beállítása</li>
+                            <li>Szellem paraméterek módosítása</li>
+                            <li>Menthető profilok</li>
+                        </ul>
+                    </article>
                 </div>
             </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="card mode-card p-4">
-                    <span class="badge bg-danger mb-3 difficulty-badge">Profi</span>
-                    <h3 class="h4 text-ghost">Professional</h3>
-                    <p>Nincs több segítség. A szellem azonnal támadhat, és a biztosítékot is gyakran lecsapja.</p>
-                    <ul class="small text-secondary">
-                        <li>0 perc felkészülési idő</li>
-                        <li>A szellem szinte bármikor vadászhat</li>
-                        <li>Az elmeállapot gyorsan fogy</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="card mode-card p-4">
-                    <span class="badge bg-dark border border-danger mb-3 difficulty-badge">Rémálom</span>
-                    <h3 class="h4 text-danger-custom">Nightmare</h3>
-                    <p>Csak a legbátrabbaknak. A szellem elrejt egy bizonyítékot, így logikára is szükséged lesz.</p>
-                    <ul class="small text-secondary">
-                        <li>Csak 2 bizonyíték érhető el</li>
-                        <li>A gyilkolás után a szellem folytatja a vadászatot</li>
-                        <li>Sérült felszerelések</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="card mode-card p-4">
-                    <span class="badge bg-dark border border-warning mb-3 difficulty-badge">Őrület</span>
-                    <h3 class="h4 text-danger-custom">Insanity</h3>
-                    <p>A végső kihívás. Szinte semmi információt nem kapsz, csak a megérzéseidre hagyatkozhatsz.</p>
-                    <ul class="small text-secondary">
-                        <li>Csak 1 bizonyíték érhető el</li>
-                        <li>Nincs setup idő, nincs nyugalom</li>
-                        <li>Nagyon magas jutalomszorzó</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="card mode-card p-4">
-                    <span class="badge bg-info text-dark mb-3 difficulty-badge">Egyedi</span>
-                    <h3 class="h4 text-ghost">Custom</h3>
-                    <p>Te hozod a szabályokat. Állítsd be a szellem sebességét, a bizonyítékok számát.</p>
-                    <ul class="small text-secondary">
-                        <li>Saját szorzók beállítása</li>
-                        <li>Gyakorlásra vagy extrém kihívásra</li>
-                        <li>Menthető profilok</li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
+        </section>
     </main>
-
-
-
-
-
-
 
     <div class="ambient ambient-left"></div>
     <div class="ambient ambient-right"></div>

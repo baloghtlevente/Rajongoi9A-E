@@ -1069,12 +1069,180 @@ body::before {
     }
 }
 
+:root {
+            --ghost-cyan: #00f2ff;
+            --blood-red: #bc0000;
+            --dark-void: #050505;
+            --card-gray: #121212;
+            --text-gray: #b0b0b0;}
+ 
+          .mode-title {
+            color: var(--ghost-cyan);
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            border-left: 4px solid var(--blood-red);
+            padding-left: 10px;}  
+/* Gamemodes page */
+.gamemodes-page {
 /* Contact page */
 .contact-page {
     position: relative;
     z-index: 1;
 }
 
+.gamemodes-hero {
+    padding: 28px 12px 16px;
+}
+
+.gamemodes-hero-card {
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    padding: clamp(20px, 3.5vw, 34px);
+    background:
+        radial-gradient(110% 140% at 0% 0%, rgba(185, 28, 28, 0.35), transparent 66%),
+        radial-gradient(120% 140% at 100% 100%, rgba(20, 84, 102, 0.28), transparent 68%),
+        linear-gradient(150deg, rgba(10, 14, 18, 0.96), rgba(16, 24, 31, 0.9));
+    box-shadow: 0 20px 44px rgba(0, 0, 0, 0.36);
+}
+
+.gamemodes-kicker {
+    margin: 0 0 8px;
+    color: var(--accent-soft);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.gamemodes-title {
+    margin: 0;
+    font-family: "Spectral SC", serif;
+    text-transform: uppercase;
+    font-size: clamp(34px, 5vw, 56px);
+    line-height: 1.05;
+    color: #f4f7fa;
+    text-shadow: 0 0 18px rgba(185, 28, 28, 0.24);
+}
+
+.gamemodes-lead {
+    margin: 12px 0 0;
+    max-width: 72ch;
+    color: #b7c3c9;
+    font-family: "Cinzel", serif;
+    line-height: 1.8;
+}
+
+.gamemodes-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.gamemodes-meta span {
+    padding: 7px 12px;
+    border-radius: 999px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #f8fafc;
+    background: rgba(185, 28, 28, 0.22);
+    border: 1px solid rgba(223, 107, 107, 0.36);
+}
+
+.gamemode-card {
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    padding: 18px;
+    background:
+        radial-gradient(90% 120% at 100% 0%, rgba(185, 28, 28, 0.17), transparent 70%),
+        linear-gradient(160deg, rgba(14, 20, 25, 0.96), rgba(10, 14, 18, 0.9));
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.32);
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.gamemode-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(223, 107, 107, 0.48);
+    box-shadow: 0 22px 40px rgba(0, 0, 0, 0.42), 0 0 24px rgba(185, 28, 28, 0.2);
+}
+
+.gamemode-card .mode-tag {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 6px 11px;
+    border-radius: 999px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: linear-gradient(135deg, rgba(185, 28, 28, 0.9), rgba(127, 29, 29, 0.9));
+}
+
+.gamemode-card h3 {
+    margin: 0;
+    font-family: "Spectral SC", serif;
+    color: #f4f8fb;
+    font-size: 1.34rem;
+}
+
+.gamemode-card p {
+    margin: 10px 0 12px;
+    color: #b2c0c7;
+    line-height: 1.65;
+}
+
+.gamemode-card ul {
+    margin: 0;
+    padding-left: 1.1rem;
+    color: #d8e0e6;
+}
+
+.gamemode-card li {
+    margin-bottom: 0.3rem;
+}
+
+.mode-amateur {
+    border-top: 2px solid rgba(34, 197, 94, 0.8);
+}
+
+.mode-intermediate {
+    border-top: 2px solid rgba(250, 204, 21, 0.9);
+}
+
+.mode-professional {
+    border-top: 2px solid rgba(239, 68, 68, 0.9);
+}
+
+.mode-nightmare {
+    border-top: 2px solid rgba(190, 24, 93, 0.9);
+}
+
+.mode-insanity {
+    border-top: 2px solid rgba(249, 115, 22, 0.9);
+}
+
+.mode-custom {
+    border-top: 2px solid rgba(56, 189, 248, 0.9);
+}
+
+@media (max-width: 992px) {
+    .gamemodes-hero {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .gamemode-card {
+        padding: 16px;
+    }
+
+    .gamemode-card h3 {
+        font-size: 1.2rem;
+    }
 .contact-kicker {
     margin-bottom: 8px;
     color: var(--accent-soft);
