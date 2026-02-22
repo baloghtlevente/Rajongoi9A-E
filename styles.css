@@ -1068,3 +1068,66 @@ body::before {
         font-size: 0.95rem;
     }
 }
+
+/* Contact page */
+.contact-page {
+    position: relative;
+    z-index: 1;
+}
+
+.contact-kicker {
+    margin-bottom: 8px;
+    color: var(--accent-soft);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.contact-lead {
+    color: #b8c4cb;
+    font-family: "Cinzel", serif;
+    margin-top: 10px;
+}
+
+.dev-contact-card {
+    height: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 20px;
+    padding: 22px;
+    text-align: center;
+    background:
+        radial-gradient(120% 120% at 0% 0%, rgba(185, 28, 28, 0.24), transparent 64%),
+        radial-gradient(100% 140% at 100% 100%, rgba(23, 82, 101, 0.22), transparent 66%),
+        linear-gradient(160deg, rgba(13, 18, 24, 0.95), rgba(17, 24, 31, 0.9));
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.34);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.dev-contact-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(223, 107, 107, 0.5);
+    box-shadow: 0 24px 46px rgba(0, 0, 0, 0.45), 0 0 28px rgba(185, 28, 28, 0.2);
+}
+
+.dev-pfp {
+    width: 132px;
+    height: 132px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid rgba(223, 107, 107, 0.65);
+    box-shadow: 0 0 22px rgba(185, 28, 28, 0.32);
+    margin-bottom: 14px;
+}
+
+.dev-contact-card h2 {
+    font-family: "Spectral SC", serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.dev-contact-card p {
+    color: #b8c4cb;
+    margin-bottom: 18px;
+    line-height: 1.6;
+}
