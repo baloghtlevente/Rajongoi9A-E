@@ -1069,23 +1069,8 @@ body::before {
     }
 }
 
-:root {
-            --ghost-cyan: #00f2ff;
-            --blood-red: #bc0000;
-            --dark-void: #050505;
-            --card-gray: #121212;
-            --text-gray: #b0b0b0;}
- 
-          .mode-title {
-            color: var(--ghost-cyan);
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-            border-left: 4px solid var(--blood-red);
-            padding-left: 10px;}  
 /* Gamemodes page */
 .gamemodes-page {
-/* Contact page */
-.contact-page {
     position: relative;
     z-index: 1;
 }
@@ -1229,20 +1214,12 @@ body::before {
     border-top: 2px solid rgba(56, 189, 248, 0.9);
 }
 
-@media (max-width: 992px) {
-    .gamemodes-hero {
-        padding-top: 20px;
-    }
+/* Contact page */
+.contact-page {
+    position: relative;
+    z-index: 1;
 }
 
-@media (max-width: 576px) {
-    .gamemode-card {
-        padding: 16px;
-    }
-
-    .gamemode-card h3 {
-        font-size: 1.2rem;
-    }
 .contact-kicker {
     margin-bottom: 8px;
     color: var(--accent-soft);
@@ -1298,4 +1275,20 @@ body::before {
     color: #b8c4cb;
     margin-bottom: 18px;
     line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+    .gamemodes-hero {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .gamemode-card {
+        padding: 16px;
+    }
+
+    .gamemode-card h3 {
+        font-size: 1.2rem;
+    }
 }
