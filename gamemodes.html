@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,46 +8,32 @@
     <link rel="stylesheet" href="styles.css">
     <title>Játékmódok</title>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg nav-ghost">
         <div class="container">
-            <a class="navbar-brand brand" href="#">
-                <!-- <img src="/assets/logos/p_logo.jpg" alt="Phasmophobia" width="44" height="44"> -->
-                <!-- <span>Phasmophobia</span> -->
-                <img src="/assets/logos/logo_lg_nobg.png" alt="PHASMOPHOBIA" id="badge-logo" class="me-1"></img>
+            <a class="navbar-brand brand" href="index.html">
+                <img src="assets/logos/logo_lg_nobg.png" alt="PHASMOPHOBIA" id="badge-logo" class="me-1">
             </a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+                data-bs-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link " href="/">Főoldal</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/about.html">Játékról</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Szellemek</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/tools.html">Eszközök</a>
-                    </li>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Főoldal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Játékról</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ghosts.html">Szellemek</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tools.html">Eszközök</a></li>
                     <li class="nav-item">
                         <a class="nav-link" href="/maps.html">Pályák</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/gamemodes.html">Játékmódok</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="characters.html">Testreszabás</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-quiz" href="quiz.html">Kvíz</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Játékmódok</a></li>
+                    <li class="nav-item"><a class="nav-link" href="characters.html">Testreszabás</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Kapcsolat</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-quiz" href="quiz.html">Kvíz</a></li>
                 </ul>
             </div>
         </div>
@@ -61,7 +48,7 @@
 
     <main class="container my-5">
         <div class="row g-4">
-            
+
             <div class="col-md-6 col-lg-4">
                 <div class="card mode-card p-4">
                     <span class="badge bg-success mb-3 difficulty-badge">Amatőr</span>
@@ -153,4 +140,5 @@
     <div class="ambient ambient-right"></div>
     <script src="assets/bootstrap-5/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
