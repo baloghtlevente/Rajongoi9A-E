@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Játékról</title>
+    <title>Pályák</title>
     <link rel="stylesheet" href="assets/bootstrap-5/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -36,196 +36,271 @@
             </div>
         </div>
     </nav>
-    <section class="container mt-5 mb-5">
-        <header class="text-center mb-5 pb-3">
-            <h1 class="display-4 fw-bold main-title">Pályák</h1>
-        </header>
+    <main class="maps-page">
+        <section class="container map-hero">
+            <div class="map-hero-panel">
+                <p class="map-hero-kicker">Phasmophobia Atlas</p>
+                <h1 class="map-hero-title">Pályák</h1>
+                <p class="map-hero-lede">
+                    Válaszd ki a következő helyszínt, tervezd meg a bejutást, és készülj fel arra,
+                    hogy minden sarokban más típusú rettegés vár.
+                </p>
+                <div class="map-hero-stats">
+                    <span>12 helyszín</span>
+                    <span>3 pályaméret</span>
+                    <span>Egyedi hangulatok</span>
+                </div>
+            </div>
+        </section>
 
-        <div class="row g-4">
+        <section class="container map-grid-section mb-5">
+            <div class="row g-4">
+                <div class="col-md-6 col-xl-4">
+                    <article class="map-card h-100">
+                        <div class="map-card-media">
+                            <figure>
+                                <img src="assets/maps/Tanglewood_Front.webp" class="map-img" alt="Tanglewood Külső">
+                                <figcaption>Külső</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/maps/tanglewood_inside.jpg" class="map-img" alt="Tanglewood Belső">
+                                <figcaption>Belső</figcaption>
+                            </figure>
+                        </div>
+                        <div class="map-card-body">
+                            <h3>Tanglewood Drive</h3>
+                            <p>Kompakt, intenzív nyomozásokhoz.</p>
+                            <span class="map-pill">Kis pálya</span>
+                        </div>
+                    </article>
+                </div>
 
-            <div class="col-md-6">
-                <div class="map-container p-3">
-                    <h3 class="text-center text-danger mb-3">Tanglewood Drive</h3>
-                    <div class="row g-2">
-                        <div class="col-6">
-                            <img src="assets/maps/Tanglewood_Front.webp" class="img-fluid rounded map-img"
-                                alt=" Tanglewood Külső">
+                <div class="col-md-6 col-xl-4">
+                    <article class="map-card h-100">
+                        <div class="map-card-media">
+                            <figure>
+                                <img src="assets/maps/Edgefield_House.webp" class="map-img" alt="Edgefield Külső">
+                                <figcaption>Külső</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/maps/Edgefield_Dining_Room.avif" class="map-img" alt="Edgefield Belső">
+                                <figcaption>Belső</figcaption>
+                            </figure>
                         </div>
-                        <div class="col-6">
-                            <img src="assets/maps/tanglewood_inside.jpg" class="img-fluid rounded map-img"
-                                alt="Tanglewood Belső">
+                        <div class="map-card-body">
+                            <h3>Edgefield Road</h3>
+                            <p>Többszintes ház, sok rejtett ponttal.</p>
+                            <span class="map-pill">Kis pálya</span>
                         </div>
-                    </div>
+                    </article>
                 </div>
-            </div>
 
-            <div class="col-md-6">
-                <div class="map-container p-3">
-                    <h3 class="text-center text-danger mb-3">Edgefield Road</h3>
-                    <div class="row g-2">
-                        <div class="col-6">
-                            <img src="assets/maps/Edgefield_House.webp" class="img-fluid rounded map-img"
-                                alt="Edgefield Road Külső">
+                <div class="col-md-6 col-xl-4">
+                    <article class="map-card h-100">
+                        <div class="map-card-media">
+                            <figure>
+                                <img src="assets/maps/Willow_street.webp" class="map-img" alt="Willow Street Külső">
+                                <figcaption>Külső</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/maps/willow-street.01.webp" class="map-img" alt="Willow Street Belső">
+                                <figcaption>Belső</figcaption>
+                            </figure>
                         </div>
-                        <div class="col-6">
-                            <img src="assets/maps/Edgefield_Dining_Room.avif" class="img-fluid rounded map-img"
-                                alt="Edgefield Road Belső">
+                        <div class="map-card-body">
+                            <h3>Willow Street</h3>
+                            <p>Szűk terek, gyors bizonyítékkereséshez.</p>
+                            <span class="map-pill">Kis pálya</span>
                         </div>
-                    </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-xl-4">
+                    <article class="map-card h-100">
+                        <div class="map-card-media">
+                            <figure>
+                                <img src="assets/maps/Ridgeview_House.webp" class="map-img" alt="Ridgeview Külső">
+                                <figcaption>Külső</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/maps/Ridgeview_living_room.webp" class="map-img" alt="Ridgeview Belső">
+                                <figcaption>Belső</figcaption>
+                            </figure>
+                        </div>
+                        <div class="map-card-body">
+                            <h3>Ridgeview Court</h3>
+                            <p>Nagyobb ház, hosszabb felderítéssel.</p>
+                            <span class="map-pill">Kis pálya</span>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-xl-4">
+                    <article class="map-card h-100">
+                        <div class="map-card-media">
+                            <figure>
+                                <img src="assets/maps/Bleasdalereworked.01.webp" class="map-img" alt="Bleasdale Külső">
+                                <figcaption>Külső</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/maps/BleasdaleInterior.jpg" class="map-img" alt="Bleasdale Belső">
+                                <figcaption>Belső</figcaption>
+                            </figure>
+                        </div>
+                        <div class="map-card-body">
+                            <h3>Bleasdale Farmhouse</h3>
+                            <p>Vertikális elrendezés, nehéz tájékozódás.</p>
+                            <span class="map-pill">Közepes pálya</span>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-xl-4">
+                    <article class="map-card h-100">
+                        <div class="map-card-media">
+                            <figure>
+                                <img src="assets/maps/grafton_farmhouse_4.avif" class="map-img" alt="Grafton Külső">
+                                <figcaption>Külső</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/maps/grafton_farmhouse_inside.avif" class="map-img" alt="Grafton Belső">
+                                <figcaption>Belső</figcaption>
+                            </figure>
+                        </div>
+                        <div class="map-card-body">
+                            <h3>Grafton Farmhouse</h3>
+                            <p>Sötét, nyomasztó mezőgazdasági épület.</p>
+                            <span class="map-pill">Közepes pálya</span>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-xl-4">
+                    <article class="map-card h-100">
+                        <div class="map-card-media">
+                            <figure>
+                                <img src="assets/maps/Camp-Woodwind.jpg" class="map-img" alt="Camp Woodwind Külső">
+                                <figcaption>Külső</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/maps/Camp_woodwind_1.webp" class="map-img" alt="Camp Woodwind Belső">
+                                <figcaption>Belső</figcaption>
+                            </figure>
+                        </div>
+                        <div class="map-card-body">
+                            <h3>Camp Woodwind</h3>
+                            <p>Nyitott terep, kis fedezék, gyors huntok.</p>
+                            <span class="map-pill">Kis pálya</span>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-xl-4">
+                    <article class="map-card h-100">
+                        <div class="map-card-media">
+                            <figure>
+                                <img src="assets/maps/pointhope_notxt.png" class="map-img" alt="Point Hope Külső">
+                                <figcaption>Külső</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/maps/point_hope.webp" class="map-img" alt="Point Hope Belső">
+                                <figcaption>Belső</figcaption>
+                            </figure>
+                        </div>
+                        <div class="map-card-body">
+                            <h3>Point Hope</h3>
+                            <p>Függőleges pályadizájn, taktikus mozgással.</p>
+                            <span class="map-pill">Közepes pálya</span>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-xl-4">
+                    <article class="map-card h-100">
+                        <div class="map-card-media">
+                            <figure>
+                                <img src="assets/maps/maple-lodge-campsite.webp" class="map-img"
+                                    alt="Maple Lodge Campsite Külső">
+                                <figcaption>Külső</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/maps/maple_lodge_campsite_1.webp" class="map-img"
+                                    alt="Maple Lodge Campsite Belső">
+                                <figcaption>Belső</figcaption>
+                            </figure>
+                        </div>
+                        <div class="map-card-body">
+                            <h3>Maple Lodge Campsite</h3>
+                            <p>Kültéri nyomozás változó látótávval.</p>
+                            <span class="map-pill">Közepes pálya</span>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-xl-4">
+                    <article class="map-card h-100">
+                        <div class="map-card-media">
+                            <figure>
+                                <img src="assets/maps/Prison_outside.jpg" class="map-img" alt="Prison Külső">
+                                <figcaption>Külső</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/maps/Prison.jpeg" class="map-img" alt="Prison Belső">
+                                <figcaption>Belső</figcaption>
+                            </figure>
+                        </div>
+                        <div class="map-card-body">
+                            <h3>Prison</h3>
+                            <p>Hosszú folyosók és nagy távolságok.</p>
+                            <span class="map-pill">Nagy pálya</span>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-xl-4">
+                    <article class="map-card h-100">
+                        <div class="map-card-media">
+                            <figure>
+                                <img src="assets/maps/Brownstone_High_School.webp" class="map-img"
+                                    alt="Brownstone High School Külső">
+                                <figcaption>Külső</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/maps/brownstone-high-school_inside.webp" class="map-img"
+                                    alt="Brownstone High School Belső">
+                                <figcaption>Belső</figcaption>
+                            </figure>
+                        </div>
+                        <div class="map-card-body">
+                            <h3>Brownstone High School</h3>
+                            <p>Komplex struktúra, sok tanteremmel.</p>
+                            <span class="map-pill">Nagy pálya</span>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-xl-4">
+                    <article class="map-card h-100">
+                        <div class="map-card-media">
+                            <figure>
+                                <img src="assets/maps/sunny-meadows.webp" class="map-img" alt="Sunny Meadows Külső">
+                                <figcaption>Külső</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="assets/maps/sunny-meadows-lobby.avif" class="map-img" alt="Sunny Meadows Belső">
+                                <figcaption>Belső</figcaption>
+                            </figure>
+                        </div>
+                        <div class="map-card-body">
+                            <h3>Sunny Meadows</h3>
+                            <p>A legnyomasztóbb helyszín, hosszú menetekhez.</p>
+                            <span class="map-pill">Nagy pálya</span>
+                        </div>
+                    </article>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="map-container p-3">
-                    <h3 class="text-center text-danger mb-3">Willow Street</h3>
-                    <div class="row g-2">
-                        <div class="col-6">
-                            <img src="assets/maps/Willow_street.webp" class="img-fluid rounded map-img"
-                                alt="Willow Street Külső">
-                        </div>
-                        <div class="col-6">
-                            <img src="assets/maps/willow-street.01.webp" class="img-fluid rounded map-img"
-                                alt="Willow Street Belső">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="map-container p-3">
-                    <h3 class="text-center text-danger mb-3">Ridgeview</h3>
-                    <div class="row g-2">
-                        <div class="col-6">
-                            <img src="assets/maps/Ridgeview_House.webp" class="img-fluid rounded map-img"
-                                alt="Ridgeview Külső">
-                        </div>
-                        <div class="col-6">
-                            <img src="assets/maps/Ridgeview_living_room.webp" class="img-fluid rounded map-img"
-                                alt="Ridgeview Belső">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="map-container p-3">
-                    <h3 class="text-center text-danger mb-3">Bleasdale Farmhouse</h3>
-                    <div class="row g-2">
-                        <div class="col-6">
-                            <img src="assets/maps/Bleasdalereworked.01.webp" class="img-fluid rounded map-img"
-                                alt="Bleasdale Farmhouse Külső">
-                        </div>
-                        <div class="col-6">
-                            <img src="assets/maps/BleasdaleInterior.jpg" class="img-fluid rounded map-img"
-                                alt="Bleasdale Farmhouse Belső">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="map-container p-3">
-                    <h3 class="text-center text-danger mb-3">Grafton Farmhouse</h3>
-                    <div class="row g-2">
-                        <div class="col-6">
-                            <img src="assets/maps/grafton_farmhouse_4.avif" class="img-fluid rounded map-img"
-                                alt="Grafton Farmhouse Külső">
-                        </div>
-                        <div class="col-6">
-                            <img src="assets/maps/grafton_farmhouse_inside.avif" class="img-fluid rounded map-img"
-                                alt="Grafton Farmhouse Belső">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="map-container p-3">
-                    <h3 class="text-center text-danger mb-3">Camp Woodwind</h3>
-                    <div class="row g-2">
-                        <div class="col-6">
-                            <img src="assets/maps/Camp-Woodwind.jpg" class="img-fluid rounded map-img"
-                                alt="Camp Woodwind Külső">
-                        </div>
-                        <div class="col-6">
-                            <img src="assets/maps/Camp_woodwind_1.webp" class="img-fluid rounded map-img"
-                                alt="Camp Woodwind Belső">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="map-container p-3">
-                    <h3 class="text-center text-danger mb-3">Point Hope</h3>
-                    <div class="row g-2">
-                        <div class="col-6">
-                            <img src="assets/maps/pointhope_notxt.png" class="img-fluid rounded map-img"
-                                alt="Point Hope Külső">
-                        </div>
-                        <div class="col-6">
-                            <img src="assets/maps/point_hope.webp" class="img-fluid rounded map-img"
-                                alt="Point Hope Belső">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="map-container p-3">
-                    <h3 class="text-center text-danger mb-3">Maple Lodge Campsite</h3>
-                    <div class="row g-2">
-                        <div class="col-6">
-                            <img src="assets/maps/maple-lodge-campsite.webp" class="img-fluid rounded map-img"
-                                alt="Maple Lodge Campsite Külső">
-                        </div>
-                        <div class="col-6">
-                            <img src="assets/maps/maple_lodge_campsite_1.webp" class="img-fluid rounded map-img"
-                                alt="Maple Lodge Campsite Belső">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="map-container p-3">
-                    <h3 class="text-center text-danger mb-3">Prison</h3>
-                    <div class="row g-2">
-                        <div class="col-6">
-                            <img src="assets/maps/Prison_outside.jpg" class="img-fluid rounded map-img"
-                                alt="Prison Külső">
-                        </div>
-                        <div class="col-6">
-                            <img src="assets/maps/Prison.jpeg" class="img-fluid rounded map-img"
-                                alt="Prison Belső">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="map-container p-3">
-                    <h3 class="text-center text-danger mb-3">Brownstone High School</h3>
-                    <div class="row g-2">
-                        <div class="col-6">
-                            <img src="assets/maps/Brownstone_High_School.webp" class="img-fluid rounded map-img"
-                                alt="Brownstone High School Külső">
-                        </div>
-                        <div class="col-6">
-                            <img src="assets/maps/brownstone-high-school_inside.webp" class="img-fluid rounded map-img"
-                                alt="Brownstone High School Belső">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="map-container p-3">
-                    <h3 class="text-center text-danger mb-3">Sunny Meadows</h3>
-                    <div class="row g-2">
-                        <div class="col-6">
-                            <img src="assets/maps/sunny-meadows.webp" class="img-fluid rounded map-img"
-                                alt="Sunny Meadows Külső">
-                        </div>
-                        <div class="col-6">
-                            <img src="assets/maps/sunny-meadows-lobby.avif" class="img-fluid rounded map-img"
-                                alt="Sunny Meadows Belső">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
     <div class="ambient ambient-left"></div>
     <div class="ambient ambient-right"></div>
     <script src="assets/bootstrap-5/js/bootstrap.bundle.min.js"></script>
