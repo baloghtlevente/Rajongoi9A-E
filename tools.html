@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Eszközök</title>
+    <link rel="stylesheet" href="assets/bootstrap-5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg nav-ghost">
+        <div class="container">
+            <a class="navbar-brand brand" href="index.html">
+                <img src="assets/logos/logo_lg_nobg.png" alt="PHASMOPHOBIA" id="badge-logo" class="me-1">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Főoldal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Játékról</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ghosts.html">Szellemek</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Eszközök</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/maps.html">Pályák</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Játékmódok</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Testreszabás</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1 class="main-title text-center">Eszközök</h1>
+    <div class="container py-5">
+        <div class="row g-4 justify-content-center">
+            <div class="col-xl-4 col-lg-5 col-md-8 d-flex">
+                <div class="card tool-card w-100">
+                    <div class="card-header tool-card-header">Zseblámpa</div>
+                    <div class="card-body tool-card-body">
+                        <div class="tool-tabs" role="tablist" aria-label="Szint valaszto">
+                            <button class="tool-tab-btn is-active" type="button" data-tool-tab="1"
+                                aria-selected="true">I. szint</button>
+                            <button class="tool-tab-btn" type="button" data-tool-tab="2" aria-selected="false">II.
+                                szint</button>
+                            <button class="tool-tab-btn" type="button" data-tool-tab="3" aria-selected="false">III.
+                                szint</button>
+                        </div>
+                        <div class="tool-tab-content pt-3">
+                            <div class="tool-pane is-active" data-tool-pane="1">
+                                <div>
+                                    <img src="/assets/tools/flashlight1.png" alt="I. Szintű zseblámpa"
+                                        class="w-100 tool-image">
+                                    <p class="text-center fst-italic tool-desc">Nemzedékről nemzedékre öröklődött,
+                                        meglepő, hogy még mindig működik.</p>
+                                </div>
+                            </div>
+                            <div class="tool-pane" data-tool-pane="2">
+                                <div>
+                                    <img src="/assets/tools/flashlight2.png" alt="II. Szintű zseblámpa"
+                                        class="w-100 tool-image">
+                                    <p class="text-center fst-italic tool-desc">Kompakt és könnyű, hátsó gombbal
+                                        rendelkezik a taktikusabb fogás érdekében.</p>
+                                </div>
+                            </div>
+                            <div class="tool-pane" data-tool-pane="3">
+                                <div>
+                                    <img src="/assets/tools/flashlight3.png" alt="III. Szintű zseblámpa"
+                                        class="w-100 tool-image">
+                                    <p class="text-center fst-italic tool-desc">Egy sokkal nagyobb zseblámpa, még
+                                        fogantyúja is van!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="tool-divider">
+                        <table class="me-auto ms-auto tool-meta">
+                            <tr>
+                                <td class="fw-bold">Ár:</td>
+                                <td class="float-end">$30</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">Maximum Játékonként:</td>
+                                <td class="float-end">4</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">Kezdő tárgy:</td>
+                                <td class="float-end">Igen</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-5 col-md-8 d-flex">
+                <div class="card tool-card w-100">
+                    <div class="card-header tool-card-header">Hőmérő</div>
+                    <div class="card-body tool-card-body">
+                        <div class="tool-tabs" role="tablist" aria-label="Szint valaszto">
+                            <button class="tool-tab-btn is-active" type="button" data-tool-tab="1"
+                                aria-selected="true">I. szint</button>
+                            <button class="tool-tab-btn" type="button" data-tool-tab="2" aria-selected="false">II.
+                                szint</button>
+                            <button class="tool-tab-btn" type="button" data-tool-tab="3" aria-selected="false">III.
+                                szint</button>
+                        </div>
+                        <div class="tool-tab-content pt-3">
+                            <div class="tool-pane is-active" data-tool-pane="1">
+                                <div>
+                                    <img src="/assets/tools/thermo1.png" alt="I. Szintű hőmérő"
+                                        class="w-100 tool-image">
+                                    <p class="text-center fst-italic tool-desc">Egy vintage falra szerelhető hőmérő,
+                                        amelyet általában egész évben a szobahőmérséklet mérésére használnak a falra
+                                        akasztva. Kézben hordozva is tökéletesen működik!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tool-pane" data-tool-pane="2">
+                                <div>
+                                    <img src="/assets/tools/thermo2.png" alt="II. Szintű hőmérő"
+                                        class="w-100 tool-image">
+                                    <p class="text-center fst-italic tool-desc">Általában egészségügyi szakemberek
+                                        használják gyors hőmérsékletmérésre; ez az infravörös hőmérő is ideális, ha
+                                        gyorsan kell értéket leolvasni. Úgy tűnik azonban, hogy kicsit pontatlanul mér —
+                                        lehet, hogy már öreg.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tool-pane" data-tool-pane="3">
+                                <div>
+                                    <img src="/assets/tools/thermo3.png" alt="III. Szintű hőmérő"
+                                        class="w-100 tool-image">
+                                    <p class="text-center fst-italic tool-desc">Modernebb, okosabb és pontosabb.
+                                        Egyszerűen verhetetlen.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="tool-divider">
+                        <table class="me-auto ms-auto tool-meta">
+                            <tr>
+                                <td class="fw-bold">Ár:</td>
+                                <td class="float-end">$30</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">Maximum Játékonként:</td>
+                                <td class="float-end">2</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">Kezdő tárgy:</td>
+                                <td class="float-end">Igen</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-5 col-md-8 d-flex">
+                <div class="card tool-card w-100">
+                    <div class="card-header tool-card-header">Spirit Box</div>
+                    <div class="card-body tool-card-body">
+                        <div class="tool-tabs" role="tablist" aria-label="Szint valaszto">
+                            <button class="tool-tab-btn is-active" type="button" data-tool-tab="1"
+                                aria-selected="true">I. szint</button>
+                            <button class="tool-tab-btn" type="button" data-tool-tab="2" aria-selected="false">II.
+                                szint</button>
+                            <button class="tool-tab-btn" type="button" data-tool-tab="3" aria-selected="false">III.
+                                szint</button>
+                        </div>
+                        <div class="tool-tab-content pt-3">
+                            <div class="tool-pane is-active" data-tool-pane="1">
+                                <div>
+                                    <img src="/assets/tools/spirit1.png" alt="I. Szintű zseblámpa"
+                                        class="w-100 tool-image">
+                                    <p class="text-center fst-italic tool-desc">Egy régi FM/AM rádió. Kicsi és kompakt,
+                                        de a hangszóró minősége nem a legjobb.</p>
+                                </div>
+                            </div>
+                            <div class="tool-pane" data-tool-pane="2">
+                                <div>
+                                    <img src="/assets/tools/spirit2.png" alt="II. Szintű zseblámpa"
+                                        class="w-100 tool-image">
+                                    <p class="text-center fst-italic tool-desc">A P-SB7T Spirit Box kizárólag az
+                                        ismeretlennel való kommunikációra készült. A háttérvilágításos kijelző segíti a
+                                        nyomozást sötétben.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tool-pane" data-tool-pane="3">
+                                <div>
+                                    <img src="/assets/tools/spirit3.png" alt="III. Szintű zseblámpa"
+                                        class="w-100 tool-image">
+                                    <p class="text-center fst-italic tool-desc">Az SB11-Z egy jóval nagyobb Spirit Box,
+                                        amely egyszerre két frekvenciasávot is képes pásztázni.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="tool-divider">
+                        <table class="me-auto ms-auto tool-meta">
+                            <tr>
+                                <td class="fw-bold">Ár:</td>
+                                <td class="float-end">$50</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">Maximum Játékonként:</td>
+                                <td class="float-end">2</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">Kezdő tárgy:</td>
+                                <td class="float-end">Igen</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-4 justify-content-center mt-3">
+            <div class="col-xl-4 col-lg-5 col-md-8 d-flex">
+                <div class="card tool-card w-100">
+                    <div class="card-header tool-card-header">ELF Olvasó</div>
+                    <div class="card-body tool-card-body">
+                        <div class="tool-tabs" role="tablist" aria-label="Szint valaszto">
+                            <button class="tool-tab-btn is-active" type="button" data-tool-tab="1"
+                                aria-selected="true">I. szint</button>
+                            <button class="tool-tab-btn" type="button" data-tool-tab="2" aria-selected="false">II.
+                                szint</button>
+                            <button class="tool-tab-btn" type="button" data-tool-tab="3" aria-selected="false">III.
+                                szint</button>
+                        </div>
+                        <div class="tool-tab-content pt-3">
+                            <div class="tool-pane is-active" data-tool-pane="1">
+                                <div>
+                                    <img src="/assets/tools/emf1.png" alt="I. Szintű EMF" class="w-100 tool-image">
+                                    <p class="text-center fst-italic tool-desc">Egy EMF-mérő, több üzemmóddal a levegő
+                                        különböző zavarainak ellenőrzésére. Sajnos öreg, és csak egy üzemmód működik,
+                                        szerencsére pont az, amire a paranormális mérésekhez szükségünk van!</p>
+                                </div>
+                            </div>
+                            <div class="tool-pane" data-tool-pane="2">
+                                <div>
+                                    <img src="/assets/tools/emf2.png" alt="II. Szintű EMF" class="w-100 tool-image">
+                                    <p class="text-center fst-italic tool-desc">A megbízható K2, amelyet paranormális
+                                        nyomozók világszerte használnak következetes eredményekkel.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tool-pane" data-tool-pane="3">
+                                <div>
+                                    <img src="/assets/tools/emf3.png" alt="III. Szintű EMF" class="w-100 tool-image">
+                                    <p class="text-center fst-italic tool-desc">Egy Ghost Huntin’ cég által
+                                        egyedileg készített készülék. Sokkal többre képes, mint pusztán az EMF-értékek
+                                        megjelenítésére a nagy kijelzőjén.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="tool-divider">
+                        <table class="me-auto ms-auto tool-meta">
+                            <tr>
+                                <td class="fw-bold">Ár:</td>
+                                <td class="float-end">$45</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">Maximum Játékonként:</td>
+                                <td class="float-end">2</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">Kezdő tárgy:</td>
+                                <td class="float-end">Igen</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-5 col-md-8 d-flex">
+                <div class="card tool-card w-100">
+                    <div class="card-header tool-card-header">Szellem Írás Könyv</div>
+                    <div class="card-body tool-card-body">
+                        <div class="tool-tabs" role="tablist" aria-label="Szint valaszto">
+                            <button class="tool-tab-btn is-active" type="button" data-tool-tab="1"
+                                aria-selected="true">I. szint</button>
+                            <button class="tool-tab-btn" type="button" data-tool-tab="2" aria-selected="false">II.
+                                szint</button>
+                            <button class="tool-tab-btn" type="button" data-tool-tab="3" aria-selected="false">III.
+                                szint</button>
+                        </div>
+                        <div class="tool-tab-content pt-3">
+                            <div class="tool-pane is-active" data-tool-pane="1">
+                                <div>
+                                    <img src="/assets/tools/book1.png" alt="I. Szintű könyv" class="w-100 tool-image">
+                                    <p class="text-center fst-italic tool-desc">Lehet, hogy nem ez a világ legcsillogóbb
+                                        dolga, de elvégzi a feladatát.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tool-pane" data-tool-pane="2">
+                                <div>
+                                    <img src="/assets/tools/book2.png" alt="II. Szintű könyv" class="w-100 tool-image">
+                                    <p class="text-center fst-italic tool-desc">A pergamenlapokat egy bőrtok védi.
+                                        Tartsd még biztonságosabban a titkaidat úgy, hogy kívül átkötöd a zsinórral.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tool-pane" data-tool-pane="3">
+                                <div>
+                                    <img src="/assets/tools/book3.png" alt="III. Szintű könyv" class="w-100 tool-image">
+                                    <p class="text-center fst-italic tool-desc">Egy antik darab, amelynek láthatóan nagy
+                                        múltja van. A fémes díszítések sokkal elegánsabbá teszik ezt a nehéz könyvet.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="tool-divider">
+                        <table class="me-auto ms-auto tool-meta">
+                            <tr>
+                                <td class="fw-bold">Ár:</td>
+                                <td class="float-end">$40</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">Maximum Játékonként:</td>
+                                <td class="float-end">2</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">Kezdő tárgy:</td>
+                                <td class="float-end">Igen</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-5 col-md-8 d-flex">
+                <div class="card tool-card w-100">
+                    <div class="card-header tool-card-header">UV Lámpa</div>
+                    <div class="card-body tool-card-body">
+                        <div class="tool-tabs" role="tablist" aria-label="Szint valaszto">
+                            <button class="tool-tab-btn is-active" type="button" data-tool-tab="1"
+                                aria-selected="true">I. szint</button>
+                            <button class="tool-tab-btn" type="button" data-tool-tab="2" aria-selected="false">II.
+                                szint</button>
+                            <button class="tool-tab-btn" type="button" data-tool-tab="3" aria-selected="false">III.
+                                szint</button>
+                        </div>
+                        <div class="tool-tab-content pt-3">
+                            <div class="tool-pane is-active" data-tool-pane="1">
+                                <div>
+                                    <img src="/assets/tools/uv1.png" alt="I. Szintű EMF" class="w-100 tool-image">
+                                    <p class="text-center fst-italic tool-desc">Egy kis világító rúd, amelyet átlátszó,
+                                        olajos folyadékkal és fluoreszkáló festékkel töltöttek meg. A rúd meghajlítása
+                                        reakciót indít el, amely élénk színnel világítja meg a környezetet.</p>
+                                </div>
+                            </div>
+                            <div class="tool-pane" data-tool-pane="2">
+                                <div>
+                                    <img src="/assets/tools/uv2.png" alt="II. Szintű EMF" class="w-100 tool-image">
+                                    <p class="text-center fst-italic tool-desc">Egy taktikai, kisméretű UV zseblámpa
+                                        praktikus övcsipesszel.
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tool-pane" data-tool-pane="3">
+                                <div>
+                                    <img src="/assets/tools/uv3.png" alt="III. Szintű EMF" class="w-100 tool-image">
+                                    <p class="text-center fst-italic tool-desc">Az UV Light Pro zseblámpa közel 80
+                                        különálló izzóval rendelkezik, amelyek hatalmas területet világítanak be.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="tool-divider">
+                        <table class="me-auto ms-auto tool-meta">
+                            <tr>
+                                <td class="fw-bold">Ár:</td>
+                                <td class="float-end">$35</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">Maximum Játékonként:</td>
+                                <td class="float-end">2</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">Kezdő tárgy:</td>
+                                <td class="float-end">Igen</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-4 justify-content-center mt-3">
+            <div class="col-xl-4 col-lg-5 col-md-8 d-flex">
+                <div class="card tool-card w-100">
+                    <div class="card-header tool-card-header">ELF Olvasó</div>
+                    <div class="card-body tool-card-body">
+                        <div class="tool-tabs" role="tablist" aria-label="Szint valaszto">
+                            <button class="tool-tab-btn is-active" type="button" data-tool-tab="1"
+                                aria-selected="true">I. szint</button>
+                            <button class="tool-tab-btn" type="button" data-tool-tab="2" aria-selected="false">II.
+                                szint</button>
+                            <button class="tool-tab-btn" type="button" data-tool-tab="3" aria-selected="false">III.
+                                szint</button>
+                        </div>
+                        <div class="tool-tab-content pt-3">
+                            <div class="tool-pane is-active" data-tool-pane="1">
+                                <div>
+                                    <img src="/assets/tools/cam1.png" alt="I. Szintű EMF" class="w-100 tool-image">
+                                    <p class="text-center fst-italic tool-desc">Egy dobozban találtunk egy csomót
+                                        ezekből a régi kamerákból a régi irodában, remélhetőleg elég jól teszik majd a
+                                        dolgukat.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tool-pane" data-tool-pane="2">
+                                <div>
+                                    <img src="/assets/tools/cam2.png" alt="II. Szintű EMF" class="w-100 tool-image">
+                                    <p class="text-center fst-italic tool-desc">A Parasonic ezt a videokamerát azzal a
+                                        céllal dobta piacra, hogy minden Bony kamerát lecseréljen; úgy tűnik, nagyrészt
+                                        sikerült is.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tool-pane" data-tool-pane="3">
+                                <div>
+                                    <img src="/assets/tools/cam3.png" alt="III. Szintű EMF" class="w-100 tool-image">
+                                    <p class="text-center fst-italic tool-desc">A Bony visszatért egy csúcstechnológiás
+                                        kamerával, amelyet kizárólag szellemvadászok számára módosítottak. Nagyszerű
+                                        filmkamera is lehetne belőle.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="tool-divider">
+                        <table class="me-auto ms-auto tool-meta">
+                            <tr>
+                                <td class="fw-bold">Ár:</td>
+                                <td class="float-end">$50</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">Maximum Játékonként:</td>
+                                <td class="float-end">4</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">Kezdő tárgy:</td>
+                                <td class="float-end">Igen</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-5 col-md-8 d-flex">
+                <div class="card tool-card w-100">
+                    <div class="card-header tool-card-header">DOTS Projektor</div>
+                    <div class="card-body tool-card-body">
+                        <div class="tool-tabs" role="tablist" aria-label="Szint valaszto">
+                            <button class="tool-tab-btn is-active" type="button" data-tool-tab="1"
+                                aria-selected="true">I. szint</button>
+                            <button class="tool-tab-btn" type="button" data-tool-tab="2" aria-selected="false">II.
+                                szint</button>
+                            <button class="tool-tab-btn" type="button" data-tool-tab="3" aria-selected="false">III.
+                                szint</button>
+                        </div>
+                        <div class="tool-tab-content pt-3">
+                            <div class="tool-pane is-active" data-tool-pane="1">
+                                <div>
+                                    <img src="/assets/tools/dots1.png" alt="I. Szintű könyv" class="w-100 tool-image">
+                                    <p class="text-center fst-italic tool-desc">Egy kis lézertoll, amely apró
+                                        fénysugarakat vetít a környezetbe.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tool-pane" data-tool-pane="2">
+                                <div>
+                                    <img src="/assets/tools/dots2.png" alt="II. Szintű könyv" class="w-100 tool-image">
+                                    <p class="text-center fst-italic tool-desc">Ezt az infravörös mozgásérzékelőt erősen
+                                        átalakították, hogy fényt vetítsen. Kicsi és kompakt, és a legtöbb felületre
+                                        rögzíthető.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tool-pane" data-tool-pane="3">
+                                <div>
+                                    <img src="/assets/tools/dots3.png" alt="III. Szintű könyv" class="w-100 tool-image">
+                                    <p class="text-center fst-italic tool-desc">Egy motoros meghajtású projektor három
+                                        lencsével, amely széles fényfedést biztosít.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="tool-divider">
+                        <table class="me-auto ms-auto tool-meta">
+                            <tr>
+                                <td class="fw-bold">Ár:</td>
+                                <td class="float-end">$65</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">Maximum Játékonként:</td>
+                                <td class="float-end">2</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">Kezdő tárgy:</td>
+                                <td class="float-end">Igen</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-5 col-md-8 d-flex">
+                <div class="card tool-card w-100">
+                    <div class="card-header tool-card-header">Feszület</div>
+                    <div class="card-body tool-card-body">
+                        <div class="tool-tabs" role="tablist" aria-label="Szint valaszto">
+                            <button class="tool-tab-btn is-active" type="button" data-tool-tab="1"
+                                aria-selected="true">I. szint</button>
+                            <button class="tool-tab-btn" type="button" data-tool-tab="2" aria-selected="false">II.
+                                szint</button>
+                            <button class="tool-tab-btn" type="button" data-tool-tab="3" aria-selected="false">III.
+                                szint</button>
+                        </div>
+                        <div class="tool-tab-content pt-3">
+                            <div class="tool-pane is-active" data-tool-pane="1">
+                                <div>
+                                    <img src="/assets/tools/crucifix1.png" alt="I. Szintű könyv"
+                                        class="w-100 tool-image">
+                                    <p class="text-center fst-italic tool-desc">Csak két darab fa összekötve. Már az
+                                        alakja önmagában is elégnek tűnik ahhoz, hogy távol tartson néhány paranormális
+                                        entitást.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tool-pane" data-tool-pane="2">
+                                <div>
+                                    <img src="/assets/tools/crucifix2.png" alt="II. Szintű könyv"
+                                        class="w-100 tool-image">
+                                    <p class="text-center fst-italic tool-desc">A fáról öntöttvasra fejlesztve ez a
+                                        kereszt sokkal megbízhatóbb védelmet nyújt.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tool-pane" data-tool-pane="3">
+                                <div>
+                                    <img src="/assets/tools/crucifix3.png" alt="III. Szintű könyv"
+                                        class="w-100 tool-image">
+                                    <p class="text-center fst-italic tool-desc">Ezt a díszes feszületet arany- és
+                                        ezüstberakásokkal ékesítették. Ezek a részletgazdag minták bizonyítottan növelik
+                                        a túlvilági lények elleni védelmet.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="tool-divider">
+                        <table class="me-auto ms-auto tool-meta">
+                            <tr>
+                                <td class="fw-bold">Ár:</td>
+                                <td class="float-end">$30</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">Maximum Játékonként:</td>
+                                <td class="float-end">2</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">Kezdő tárgy:</td>
+                                <td class="float-end">Nem</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ambient ambient-left"></div>
+    <div class="ambient ambient-right"></div>
+    <script>
+        document.querySelectorAll('.tool-card').forEach((card) => {
+            const tabs = card.querySelectorAll('[data-tool-tab]');
+            const panes = card.querySelectorAll('[data-tool-pane]');
+
+            tabs.forEach((tab) => {
+                tab.addEventListener('click', () => {
+                    const level = tab.dataset.toolTab;
+
+                    tabs.forEach((btn) => {
+                        const active = btn === tab;
+                        btn.classList.toggle('is-active', active);
+                        btn.setAttribute('aria-selected', active ? 'true' : 'false');
+                    });
+
+                    panes.forEach((pane) => {
+                        pane.classList.toggle('is-active', pane.dataset.toolPane === level);
+                    });
+                });
+            });
+        });
+    </script>
+    <script src="assets/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
