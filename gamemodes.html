@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/bootstrap-5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Játékmódok</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg nav-ghost">
+        <div class="container">
+            <a class="navbar-brand brand" href="#">
+                <!-- <img src="/assets/logos/p_logo.jpg" alt="Phasmophobia" width="44" height="44"> -->
+                <!-- <span>Phasmophobia</span> -->
+                <img src="/assets/logos/logo_lg_nobg.png" alt="PHASMOPHOBIA" id="badge-logo" class="me-1"></img>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " href="/">Főoldal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">Játékról</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Szellemek</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/tools.html">Eszközök</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/maps.html">Pályák</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/gamemodes.html">Játékmódok</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="characters.html">Testreszabás</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-quiz" href="quiz.html">Kvíz</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold text-ghost">PHASMOPHOBIA</h1>
+            <p class="lead italic">Válassz nehézségi szintet, ha mersz...</p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="row g-4">
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card mode-card p-4">
+                    <span class="badge bg-success mb-3 difficulty-badge">Amatőr</span>
+                    <h3 class="h4 text-ghost">Amateur</h3>
+                    <p>A kezdő szellemvadászok számára. Itt még van időd körülnézni, mielőtt a szellem dühös lesz.</p>
+                    <ul class="small text-secondary">
+                        <li>5 perc felkészülési idő</li>
+                        <li>Hosszabb "setup" fázis</li>
+                        <li>Több visszakapott pénz halál esetén</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card mode-card p-4">
+                    <span class="badge bg-warning text-dark mb-3 difficulty-badge">Haladó</span>
+                    <h3 class="h4 text-ghost">Intermediate</h3>
+                    <p>Már tudod, mit csinálsz, de a szellem is aktívabb. A biztonságérzeted kezd elpárologni.</p>
+                    <ul class="small text-secondary">
+                        <li>2 perc felkészülési idő</li>
+                        <li>Gyorsabb elmeállapot (Sanity) csökkenés</li>
+                        <li>A szellem gyakrabban interaktál</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card mode-card p-4">
+                    <span class="badge bg-danger mb-3 difficulty-badge">Profi</span>
+                    <h3 class="h4 text-ghost">Professional</h3>
+                    <p>Nincs több segítség. A szellem azonnal támadhat, és a biztosítékot is gyakran lecsapja.</p>
+                    <ul class="small text-secondary">
+                        <li>0 perc felkészülési idő</li>
+                        <li>A szellem szinte bármikor vadászhat</li>
+                        <li>Az elmeállapot gyorsan fogy</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card mode-card p-4">
+                    <span class="badge bg-dark border border-danger mb-3 difficulty-badge">Rémálom</span>
+                    <h3 class="h4 text-danger-custom">Nightmare</h3>
+                    <p>Csak a legbátrabbaknak. A szellem elrejt egy bizonyítékot, így logikára is szükséged lesz.</p>
+                    <ul class="small text-secondary">
+                        <li>Csak 2 bizonyíték érhető el</li>
+                        <li>A gyilkolás után a szellem folytatja a vadászatot</li>
+                        <li>Sérült felszerelések</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card mode-card p-4">
+                    <span class="badge bg-dark border border-warning mb-3 difficulty-badge">Őrület</span>
+                    <h3 class="h4 text-danger-custom">Insanity</h3>
+                    <p>A végső kihívás. Szinte semmi információt nem kapsz, csak a megérzéseidre hagyatkozhatsz.</p>
+                    <ul class="small text-secondary">
+                        <li>Csak 1 bizonyíték érhető el</li>
+                        <li>Nincs setup idő, nincs nyugalom</li>
+                        <li>Nagyon magas jutalomszorzó</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card mode-card p-4">
+                    <span class="badge bg-info text-dark mb-3 difficulty-badge">Egyedi</span>
+                    <h3 class="h4 text-ghost">Custom</h3>
+                    <p>Te hozod a szabályokat. Állítsd be a szellem sebességét, a bizonyítékok számát.</p>
+                    <ul class="small text-secondary">
+                        <li>Saját szorzók beállítása</li>
+                        <li>Gyakorlásra vagy extrém kihívásra</li>
+                        <li>Menthető profilok</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+
+
+
+
+
+    <div class="ambient ambient-left"></div>
+    <div class="ambient ambient-right"></div>
+    <script src="assets/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
