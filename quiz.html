@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phasmophobia Kvíz</title>
+    <link rel="stylesheet" href="assets/bootstrap-5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg nav-ghost">
+        <div class="container">
+            <a class="navbar-brand brand" href="index.html">
+                <img src="assets/logos/logo_lg_nobg.png" alt="PHASMOPHOBIA" id="badge-logo" class="me-1">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Főoldal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Játékról</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ghosts.html">Szellemek</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tools.html">Eszközök</a></li>
+                    <li class="nav-item"><a class="nav-link" href="maps.html">Pályák</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Játékmódok</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Testreszabás</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-quiz active" href="quiz.html">Kvíz</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="quiz-shell container py-4 py-lg-5">
+        <section class="quiz-hero mb-4 mb-lg-5">
+            <p class="quiz-kicker">Rajongói tudáspróba</p>
+            <h1 class="quiz-title">Phasmophobia Kvíz</h1>
+            <p class="quiz-subtitle">A kérdések az oldalon szereplő információkból készültek (Játékról, Szellemek, Eszközök, Pályák).</p>
+        </section>
+
+        <form id="quiz-form" class="quiz-form" novalidate>
+            <div id="quiz-questions" class="row g-4"></div>
+
+            <div class="quiz-actions mt-4 d-flex flex-wrap gap-2">
+                <button class="btn-ghost" type="submit">Kiértékelés</button>
+                <button class="btn-ghost ghost-outline" id="reset-quiz" type="button">Újrapróbálom</button>
+            </div>
+        </form>
+
+        <section id="quiz-result" class="quiz-result mt-4" hidden>
+            <h2 class="quiz-result-title">Eredmény</h2>
+            <p id="quiz-score" class="quiz-score mb-2"></p>
+            <p id="quiz-summary" class="quiz-summary mb-3"></p>
+            <div id="quiz-mistakes-wrap" hidden>
+                <h3 class="quiz-mistakes-title">Amit elhibáztál</h3>
+                <ul id="quiz-mistakes" class="quiz-mistakes"></ul>
+            </div>
+        </section>
+    </main>
+
+    <div class="ambient ambient-left"></div>
+    <div class="ambient ambient-right"></div>
+
+    <script src="assets/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+    <script src="quiz.js"></script>
+</body>
+
+</html>
