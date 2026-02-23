@@ -13,7 +13,7 @@
 
 ## Commit Nyelv: **Angol**
 
-## Online Oldal és Hosting (link): [GitHub Pages](http://baloghtlevente.github.io/Rajongoi9A-E) *(még nem online!)*
+## Online Oldal és Hosting (link): [GitHub Pages](http://baloghtlevente.github.io/Rajongoi9A-E)
 
 ## A játékról
 
