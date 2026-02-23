@@ -83,7 +83,7 @@ function renderQuiz() {
         col.className = 'col-12';
 
         const card = document.createElement('article');
-        card.className = 'quiz-question-card';
+        card.className = 'quiz-question-card ms-5 me-5';
         card.dataset.question = String(qIdx);
 
         const title = document.createElement('h3');
